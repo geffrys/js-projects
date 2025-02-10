@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.title{
+    text-align: center;
+}
+
+/* ----------- */
+/* VARS   */
+/* ----------- */
+
+:root{
+    --color-s: #ff7f80;
+    --color-a: #ffc07f;
+    --color-b: #ffdf80;
+    --color-c: #fdff7f;
+    --color-d: #bfff7f;
+    --color-e: #7fff7f;
+    --action-color: gray;
+}
+
+/* ----------- */
+/* tier list   */
+/* ----------- */
+
+.tier_list_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.tier_list{
+    list-style: none;
+}
+
+.tier_element{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: black;
+    border: gray 1px solid;
+}
+
+
+.tier_list .tier_element:nth-child(1){
+    background-color: var(--color-s);
+}
+.tier_list .tier_element:nth-child(2){
+    background-color: var(--color-a);
+}
+.tier_list .tier_element:nth-child(3){
+    background-color: var(--color-b);
+}
+.tier_list .tier_element:nth-child(4){
+    background-color: var(--color-c);
+}
+.tier_list .tier_element:nth-child(5){
+    background-color: var(--color-d);
+}
+.tier_list .tier_element:nth-child(6){
+    background-color: var(--color-e);
+}
+
+
+/* ------------ */
+/* tier actions */
+/* ------------ */
+
+.tier_actions_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tier_actions{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action{
+    padding: 10px;
+    background-color: var(--action-color);
+}
+
+/* ------------ */
+/* tier list generic */
+/* ------------ */
+
+.tier_list_generic_container{
+    background-color: gray;
+    padding: 10px;
+}
+
+
+/* ------------ */
+/* generic      */
+/* ------------ */
+
+.hidden{
+    display: none;
+}
